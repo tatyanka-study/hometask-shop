@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  display: grid;
+  margin: 30px 15px;
+  font-size: 22px;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+}
+
+.navbar li {
+  border-right: 2px solid grey;
+  float: left;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(15, 95, 29);
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline 2px;
+  color: rgb(49, 177, 73);
+}
