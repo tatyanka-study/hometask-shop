@@ -13,7 +13,7 @@ export class Main extends Component {
                     </div>
                     <div className='sidebar right'>
                         {this.props.shopss.map(el=> (
-                            <Card shopss={el} />
+                            <Card key={el.id} shopss={el} />
                         ))}
                     </div>
                 </div>

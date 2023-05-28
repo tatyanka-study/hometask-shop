@@ -5,7 +5,7 @@ import Footer from './pages/Footer'
 import Main from './pages/Main'
 // import { shops1 } from '../data1'
 
-class Shop extends React.Component () {
+class Shop extends React.Component {
 
     constructor(props) {
         super(props)
@@ -111,7 +111,7 @@ class Shop extends React.Component () {
                 },
                 {     
                     id: 25,
-                    title: 'Зotatoes',
+                    title: 'Potatoes',
                     img: 'potatoes.jpg',
                     shopName: 'Ikura',
                     price: '35.00'
@@ -123,9 +123,9 @@ class Shop extends React.Component () {
 render(){
   return (
     <div className='wrapper'>
-    <Header />
-    <Main shopss={this.state.shopss} />
-    <Footer />
+      <Header />
+      <Main shopss={this.state.shopss} />
+      <Footer />
     </div>
   )
 }

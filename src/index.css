@@ -11,6 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper { 
+  margin: 50px 5%;
+}
 
 .container {
   display: grid;
@@ -42,3 +50,76 @@ code {
   text-decoration: underline 2px;
   color: rgb(49, 177, 73);
 }
+
+/* ---------------- Main ------------------- */
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 3fr; 
+  grid-gap: 1em;   
+}
+
+.sidebar {
+  border: 2px solid grey;
+  border-radius: 8px;    
+}
+
+.shop {
+  border: 2px solid grey;
+  border-radius: 8px;
+  width: 50%;
+  margin: 23px auto;   
+}
+
+.shop:hover {
+  background-color: grey;
+  color: beige;
+}
+
+.sidebar p {
+  text-align: center;
+}
+
+/* ----------- Card ----------------*/
+
+.right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5em;
+  padding: 4%;
+}
+
+.card {
+  border: 2px solid grey;
+  border-radius: 8px;  
+}
+
+img {
+  width: 80%;
+  height: auto;
+  margin: 0px 10%;
+}
+
+.prise_block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: bold;
+}
+
+button {
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 12px;
+  width: 40%;
+  float: right;
+  margin: 15px;
+  padding: 7px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: grey;
+  color: beige;
+}
+
