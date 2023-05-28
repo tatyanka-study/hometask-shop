@@ -1,10 +1,41 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './pages/Header';
 import Brands from './Brands';
 import { brandList } from './data';
-
+import Brand from './Brand';
 
 const Shop = () => {
+
+  const [selectedBrandId, setSelectedBrandId] = useState(0);
+
+  const getSelectedBrand = (id) => {
+    if (id === 0) {
+      return getAllGoods(); 
+    }
+
+    return brandList.find((brand) => {
+      return brand.id === id;
+    })
+
+  }
+
+const getAllGoods = () => {
+
+  const allGoods = {
+    id: 0,        
+    name: 'allBrands',
+    goods:[]
+  }
+
+  brandList.forEach(brand => {
+    if (brand.goods) {
+      allGoods.goods.push(...brand.goods)
+    }
+  })
+
+
+  return allGoods;
+}
 
   return (
     <div className='wrapper'>
@@ -15,6 +46,7 @@ const Shop = () => {
                     <Brands brandList={brandList} />
                 </div>
                 <div className='sidebar right'>
+                  <Brand selectedBrand = {getSelectedBrand(selectedBrandId)}/>
                    
                 </div>
             </div>
