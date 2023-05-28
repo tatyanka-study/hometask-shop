@@ -1,19 +1,25 @@
-import React from 'react'
+import React, { Component } from 'react'
+import Card from '../Card';
 // import { shops1 } from '../data1'
 
-export default function Main({shop, setShop}) {
-  return (
-    <main>
-        <div className='main'>
-            <div className='sidebar'>
-                {shop.map((el) =>{
-                    
-                })}
-            </div>
-            <div className='sidebar right'>
+export class Main extends Component {
 
-            </div>
-        </div>
-    </main>
-  )
+    render() {
+        return (
+            <main>
+                <div className='main'>
+                    <div className='sidebar'>
+                    
+                    </div>
+                    <div className='sidebar right'>
+                        {this.props.shopss.map(el=> (
+                            <Card shopss={el} />
+                        ))}
+                    </div>
+                </div>
+            </main>
+        )
+    }
 }
+
+export default Main;
