@@ -11,7 +11,7 @@ export class Card extends Component {
           </figure>
           <div className='prise_block'>     
               <p>{this.props.shopss.title}</p>
-              <p>price {this.props.shopss.price} hrn</p>
+              <p>price: {this.props.shopss.price} hrn</p>
           </div>
           <Addbtn />
       </div>

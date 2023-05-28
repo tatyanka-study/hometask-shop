@@ -14,14 +14,14 @@ class Shop extends React.Component {
                 {     
                     id: 11,
                     title: 'Hamburger',
-                    img: 'burger.jpg',
+                    img: 'Hamburge.jpg',
                     shopName: 'McDonald\'s',
                     price: '55.00'
                 },
                 {     
                     id: 12,
                     title: 'Cheeseburger',
-                    img: 'burger.jpg',
+                    img: 'Cheeseburger.jpg',
                     shopName: 'McDonald\'s',
                     price: '65.00'
                 },
@@ -36,13 +36,13 @@ class Shop extends React.Component {
                     id: 14,
                     title: 'Fries',
                     img: 'Fries.jpg',
-                    shopName: 'KFC',
+                    shopName: 'McDonald\'s',
                     price: '55.00'
                 },
                 {     
                     id: 15,
                     title: 'Happy Meal',
-                    img: 'burger.jpg',
+                    img: 'HappyMeal.jpg',
                     shopName: 'McDonald\'s',
                     price: '160.00'
                 },
@@ -119,7 +119,9 @@ class Shop extends React.Component {
             
                 ]
         }
-    } 
+   
+    // this.selectedShop = this.selectedShop.bind(this)
+} 
 render(){
   return (
     <div className='wrapper'>
@@ -129,6 +131,11 @@ render(){
     </div>
   )
 }
+
+// selectedShop(shopsnames){
+//      console.log(shopsnames)
+// }
+
 }
 
 export default Shop;

@@ -74,6 +74,7 @@ code {
 .shop:hover {
   background-color: grey;
   color: beige;
+  cursor: pointer;
 }
 
 .sidebar p {
@@ -121,5 +122,6 @@ button {
 button:hover {
   background-color: grey;
   color: beige;
+  cursor: pointer;
 }
 
