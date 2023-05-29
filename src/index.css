@@ -17,10 +17,6 @@ code {
   padding: 0;
 }
 
-header {
-  height: 90px;
-}
-
 .wrapper { 
   margin: 10px 5%;
 }
@@ -28,9 +24,7 @@ header {
 .container {
   display: grid;
   margin: 30px 15px;
-  font-size: 22px;
-  position: fixed;
-  background-color: white;
+  font-size: 22px;  
 }
 
 .navbar {
@@ -54,6 +48,11 @@ header {
 }
 
 .navbar a:hover {
+  text-decoration: underline 2px;
+  color: rgb(49, 177, 73);
+}
+
+.navbar a.active  {
   text-decoration: underline 2px;
   color: rgb(49, 177, 73);
 }
@@ -100,11 +99,14 @@ header {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5em;
   padding: 4%;
+  height: 700px;
+  overflow: auto;
 }
 
 .card {
   border: 2px solid grey;
-  border-radius: 8px;  
+  border-radius: 8px; 
+  height: 310px; 
 }
 
 img {
@@ -137,3 +139,31 @@ button:hover {
   cursor: pointer;
 }
 
+.brands-wrapper {
+  height: 800px;
+  overflow: auto;
+}
+
+/* ------------------ shopping-cart------------ */
+
+.shopping-cart {
+  cursor: pointer;
+  color: brown;
+}
+
+.shopping-cart.active {
+  color: green;
+}
+
+
+.modal-cart {
+  position: absolute;  
+  margin: 20px 10px 0px 250px;
+  border: 2px solid #e3e3e3;
+  border-radius: 8px;
+  width: 450px;
+  box-shadow: 4px 4px 24px #bdacac;
+  min-height: 100px;
+  background-color: #f5f4f4;
+  z-index: 1000;
+}

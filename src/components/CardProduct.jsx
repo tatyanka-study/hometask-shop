@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
-import Addbtn from './Addbtn'
+import React from 'react';
+import AddToCartBtn from './AddToCartBtn'
 
-const CardProduct = ({product}) => { 
+const CardProduct = ({product, orders, setOrders}) => { 
+
     return (
       <div className='card'>
           <figure>
@@ -12,7 +13,7 @@ const CardProduct = ({product}) => {
               <p>{product.title}</p>
               <p>price: {product.price} hrn</p>
           </div>
-          <Addbtn />
+          <AddToCartBtn identification={product.id} orders={orders} setOrders={setOrders}/>
       </div>
     )  
 }

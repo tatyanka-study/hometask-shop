@@ -1,12 +1,17 @@
 import React, {useState} from 'react';
 import Header from './pages/Header';
 import Brands from './Brands';
-import { brandList } from './data';
 import Brand from './Brand';
+import { brandList } from './data';
+
 
 const Shop = () => {
 
   const [selectedBrandId, setSelectedBrandId] = useState(0);
+
+  const [orders, setOrders] = useState([]);
+
+  console.log(orders)
 
   const getSelectedBrand = (id) => {
     if (id === 0) {
@@ -19,7 +24,7 @@ const Shop = () => {
 
   }
 
-const getAllGoods = () => {
+  const getAllGoods = () => {
 
   const allGoods = {
     id: 0,        
@@ -44,8 +49,7 @@ const getAllGoods = () => {
                     <Brands brandList={brandList} setSelectedBrandId={setSelectedBrandId}/>
                 </div>
                 <div className='sidebar right'>
-                  <Brand selectedBrand = {getSelectedBrand(selectedBrandId)}/>
-                   
+                    <Brand selectedBrand={getSelectedBrand(selectedBrandId)} orders={orders} setOrders={setOrders}/>                   
                 </div>
             </div>
       </main>
