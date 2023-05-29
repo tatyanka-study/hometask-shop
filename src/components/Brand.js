@@ -6,7 +6,7 @@ const Brand = ({selectedBrand}) => {
   return (
     <>
     {selectedBrand.goods.map(product => {
-       return  <CardProduct product={product} /> 
+       return  <CardProduct product={product} key={product.id}/> 
     })}
        
     </>

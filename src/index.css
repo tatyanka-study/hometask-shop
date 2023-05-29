@@ -11,19 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 *{
   margin: 0;
   padding: 0;
 }
 
+header {
+  height: 90px;
+}
+
 .wrapper { 
-  margin: 50px 5%;
+  margin: 10px 5%;
 }
 
 .container {
   display: grid;
   margin: 30px 15px;
   font-size: 22px;
+  position: fixed;
+  background-color: white;
 }
 
 .navbar {
@@ -68,13 +75,18 @@ code {
   border: 2px solid grey;
   border-radius: 8px;
   width: 50%;
-  margin: 23px auto;   
+  margin: 23px auto;
+  height: 43px;   
 }
+.shop p {
+  margin: 10px auto;
+} 
 
 .shop:hover {
   background-color: grey;
   color: beige;
   cursor: pointer;
+
 }
 
 .sidebar p {
@@ -96,7 +108,7 @@ code {
 }
 
 img {
-  width: 80%;
+  width: 55%;
   height: auto;
   margin: 0px 10%;
 }

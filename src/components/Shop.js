@@ -32,8 +32,6 @@ const getAllGoods = () => {
       allGoods.goods.push(...brand.goods)
     }
   })
-
-
   return allGoods;
 }
 
@@ -43,7 +41,7 @@ const getAllGoods = () => {
       <main>
             <div className='main'>
                 <div className='sidebar'>
-                    <Brands brandList={brandList} />
+                    <Brands brandList={brandList} setSelectedBrandId={setSelectedBrandId}/>
                 </div>
                 <div className='sidebar right'>
                   <Brand selectedBrand = {getSelectedBrand(selectedBrandId)}/>

@@ -1,11 +1,11 @@
 import React from 'react';
 
 
-const Brands = ({brandList}) => {
+const Brands = ({brandList, setSelectedBrandId}) => {
   return (
     <>
         {brandList.map(brand=> (
-            <div className='shop' key={brand.id} onClick={() => console.log(brand)}><p>{brand.name}</p></div>
+            <div className='shop' key={brand.id} onClick={() => setSelectedBrandId(brand.id)}><p>{brand.name}</p></div>
         ))}
     </>
   )
