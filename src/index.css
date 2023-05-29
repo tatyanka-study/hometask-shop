@@ -106,7 +106,8 @@ code {
 .card {
   border: 2px solid grey;
   border-radius: 8px; 
-  height: 310px; 
+  height: 340px;
+  margin: 5px; 
 }
 
 img {
@@ -155,15 +156,54 @@ button:hover {
   color: green;
 }
 
-
 .modal-cart {
   position: absolute;  
-  margin: 20px 10px 0px 250px;
+  margin: 20px 10px 0px 150px;
   border: 2px solid #e3e3e3;
   border-radius: 8px;
-  width: 450px;
+  min-width: 450px;
   box-shadow: 4px 4px 24px #bdacac;
   min-height: 100px;
   background-color: #f5f4f4;
   z-index: 1000;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  padding: 10px;
+  width: 50%;
+  margin: 20px auto;
+  height: 500px;
+}
+
+form {
+  width: 280px;
+  font-size: 18px;
+}
+
+input {
+  margin: 0 0 15px 7px;
+  
+ 
+}
+
+.form-container {
+  border: 2px solid grey;
+  border-radius: 8px;   
+  margin: 2%;
+}
+
+label {
+  text-align: start ;
+  margin-bottom: 20px;
+}
+
+.products {
+  height: 100%;
+  overflow: auto;
+}
+
+.del {
+  float: right;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
 }

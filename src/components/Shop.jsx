@@ -15,34 +15,45 @@ const Shop = () => {
 
   const getSelectedBrand = (id) => {
     if (id === 0) {
-      return getAllGoods(); 
+      return getAllBrandsGoods(); 
     }
 
-    return brandList.find((brand) => {
-      return brand.id === id;
-    })
-
+    return brandList.find((brand) => brand.id === id)
   }
 
-  const getAllGoods = () => {
+  const getAllBrandsGoods = () => ({
+      id: 0,        
+      name: 'allBrands',
+      goods: getAllGoods()
+  });
 
-  const allGoods = {
-    id: 0,        
-    name: 'allBrands',
-    goods:[]
-  }
 
+const getAllGoods = () => {
+  const goods = [];
   brandList.forEach(brand => {
     if (brand.goods) {
-      allGoods.goods.push(...brand.goods)
+      goods.push(...brand.goods)
     }
-  })
-  return allGoods;
+  });
+
+  return goods;
+}
+
+const getOrdersItems = () => {
+  const goods = getAllGoods();
+  const ordersItems = goods.filter((good) => orders.includes(good.id))
+
+  console.log(ordersItems)
+  return ordersItems;
+}
+
+const deleteHandler = (id) => {
+  setOrders(orders.filter((order) => order !== id))
 }
 
   return (
     <div className='wrapper'>
-      <Header />
+      <Header ordersItems={getOrdersItems()} deleteHandler={deleteHandler} />
       <main>
             <div className='main'>
                 <div className='sidebar'>
