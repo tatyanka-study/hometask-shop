@@ -12,7 +12,7 @@ export const brandList = [
                 title: 'Hamburger',
                 img: 'Hamburge.jpg',
                 shopName: 'McDonald\'s',
-                price: '55.00'
+                price: '55.25'
             },
             {     
                 id: 12,

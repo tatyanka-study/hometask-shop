@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-// import ShoppingCart from './pages/ShoppingCart';
 
 const OrderCard = ({product, deleteHandler}) => {
         return (

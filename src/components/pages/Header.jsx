@@ -17,7 +17,7 @@ const Header = ({ordersItems, deleteHandler}) => {
                     <li><a href="#">Coupons</a></li>
                 </ul>
               
-                {cartOpen && (<ShoppingCart ordersItems={ordersItems} deleteHandler={deleteHandler}/>)}
+                {cartOpen && (<ShoppingCart ordersItems={ordersItems} deleteHandler={deleteHandler} />)}
             </div>
         </div>
     </header>
