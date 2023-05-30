@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import OrderCard from '../OrderCard';
 
-
 const ShoppingCart = ({ordersItems, deleteHandler}) => {
   let initialValue = 0;
 
@@ -31,8 +30,7 @@ const ShoppingCart = ({ordersItems, deleteHandler}) => {
 
       useEffect(() => {
         localStorage.setItem("formValues", JSON.stringify(formValues));
-      }, [formValues]);
-      
+      }, [formValues]);     
 
  
   return (
@@ -51,9 +49,7 @@ const ShoppingCart = ({ordersItems, deleteHandler}) => {
               <input type="phone" placeholder="Enter your phonee" required value={initialValues.phone} onChange={(e) => setInitialValues({ ...initialValues, phone: e.target.value })}/>
 
               <label for="address"><b>Address:</b></label>              
-              <input type="text" placeholder="Enter your address" required value={initialValues.address} onChange={(e) => setInitialValues({ ...initialValues, address: e.target.value })}/>
-
-                          
+              <input type="text" placeholder="Enter your address" required value={initialValues.address} onChange={(e) => setInitialValues({ ...initialValues, address: e.target.value })}/>                       
           </form>  
         </div>
 

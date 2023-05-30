@@ -24,7 +24,7 @@ code {
 .container {
   display: grid;
   margin: 30px 15px;
-  font-size: 22px;  
+  font-size: 18px;  
 }
 
 .navbar {
@@ -106,7 +106,7 @@ code {
 .card {
   border: 2px solid grey;
   border-radius: 8px; 
-  height: 340px;
+  height: 300px;
   margin: 5px; 
 }
 

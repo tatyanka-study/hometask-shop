@@ -3,8 +3,7 @@ import CardProduct from '../CardProduct';
 import ShoppingCart from './ShoppingCart';
 
 const Header = ({ordersItems, deleteHandler}) => {
-
-  let [cartOpen, setCartOpen] = useState(false); 
+  let [cartOpen, setCartOpen] = useState(false);   
 
   return (
     <header>

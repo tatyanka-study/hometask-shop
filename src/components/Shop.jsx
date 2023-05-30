@@ -9,16 +9,12 @@ import FlashMessage from './FlashMessage';
 const Shop = () => {
 
   const [selectedBrandId, setSelectedBrandId] = useState(0);
-
   const [orders, setOrders] = useState([]);
-
-  console.log(orders)
 
   const getSelectedBrand = (id) => {
     if (id === 0) {
       return getAllBrandsGoods(); 
     }
-
     return brandList.find((brand) => brand.id === id)
   }
 
@@ -29,28 +25,25 @@ const Shop = () => {
   });
 
 
-const getAllGoods = () => {
-  const goods = [];
-  brandList.forEach(brand => {
-    if (brand.goods) {
-      goods.push(...brand.goods)
-    }
-  });
+  const getAllGoods = () => {
+    const goods = [];
+      brandList.forEach(brand => {
+        if (brand.goods) {
+          goods.push(...brand.goods)
+        }
+      });
+    return goods;
+  }
 
-  return goods;
-}
-
-const getOrdersItems = () => {
+  const getOrdersItems = () => {
   const goods = getAllGoods();
   const ordersItems = goods.filter((good) => orders.includes(good.id))
+    return ordersItems;
+  }
 
-  console.log(ordersItems)
-  return ordersItems;
-}
-
-const deleteHandler = (id) => {
-  setOrders(orders.filter((order) => order !== id))
-}
+  const deleteHandler = (id) => {
+    setOrders(orders.filter((order) => order !== id))
+  }
 
   return (
     <div className='wrapper'>

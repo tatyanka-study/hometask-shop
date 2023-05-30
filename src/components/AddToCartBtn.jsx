@@ -1,23 +1,18 @@
 import React, {useState} from 'react';
 
+const AddToCartBtn = ({identification, orders, setOrders}) => {   
 
-
-const AddToCartBtn = ({identification, orders, setOrders}) => {    
-
-  const addToCart = () => {
-     
+  const addToCart = () => {     
     console.log(identification)
-    let newOrder = [...orders, identification];
-   
-
+    let newOrder = [...orders, identification];   
    return setOrders(newOrder);
   }
 
-    return (
+  return (
       <div>
         <button className='add-to-card-btn' onClick={addToCart}>add to Cart</button>
       </div>
-    )
-  }
+  )
+}
 
 export default AddToCartBtn;

@@ -15,9 +15,9 @@ const FlashMessage = ({text, duration, orders}) => {
   return (
       <> 
         {open &&  (
-                    <div className="flash">
-                      <p>{text}</p>     
-                    </div>
+              <div className="flash">
+                <p>{text}</p>     
+              </div>
           )
           }
       </>
