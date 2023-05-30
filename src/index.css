@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper { 
+  margin: 10px 5%;
+}
+
+.container {
+  display: grid;
+  margin: 30px 15px;
+  font-size: 18px;  
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+}
+
+.navbar li {
+  border-right: 2px solid grey;
+  float: left;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(15, 95, 29);
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline 2px;
+  color: rgb(49, 177, 73);
+}
+
+.navbar a.active  {
+  text-decoration: underline 2px;
+  color: rgb(49, 177, 73);
+}
+
+/* ---------------- Main ------------------- */
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 3fr; 
+  grid-gap: 1em;   
+}
+
+.sidebar {
+  border: 2px solid grey;
+  border-radius: 8px;    
+}
+
+.shop {
+  border: 2px solid grey;
+  border-radius: 8px;
+  width: 50%;
+  margin: 23px auto;
+  height: 43px;   
+}
+.shop p {
+  margin: 10px auto;
+} 
+
+.shop:hover {
+  background-color: grey;
+  color: beige;
+  cursor: pointer;
+
+}
+
+.sidebar p {
+  text-align: center;
+}
+
+/* ----------- Card ----------------*/
+
+.right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5em;
+  padding: 4%;
+  height: 700px;
+  overflow: auto;
+}
+
+.card {
+  border: 2px solid grey;
+  border-radius: 8px; 
+  height: 300px;
+  margin: 5px; 
+}
+
+img {
+  width: 55%;
+  height: auto;
+  margin: 0px 10%;
+}
+
+.prise_block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: bold;
+}
+
+button {
+  text-align: center;
+  border: 2px solid grey;
+  border-radius: 12px;
+  width: 40%;
+  float: right;
+  margin: 15px;
+  padding: 7px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: grey;
+  color: beige;
+  cursor: pointer;
+}
+
+.brands-wrapper {
+  height: 800px;
+  overflow: auto;
+}
+
+/* ------------------ shopping-cart------------ */
+
+.shopping-cart {
+  cursor: pointer;
+  color: brown;
+}
+
+.shopping-cart.active {
+  color: green;
+}
+
+.modal-cart {
+  position: absolute;  
+  margin: 20px 10px 0px 150px;
+  border: 2px solid #e3e3e3;
+  border-radius: 8px;
+  min-width: 450px;
+  box-shadow: 4px 4px 24px #bdacac;
+  min-height: 100px;
+  background-color: #f5f4f4;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  padding: 10px;
+  width: 40%;
+  margin: 20px auto;
+  height: 500px;
+}
+
+form {
+  width: 280px;
+  font-size: 18px;
+}
+
+input {
+  margin: 0 0 15px 7px; 
+ 
+}
+
+.form-container {
+  border: 2px solid grey;
+  border-radius: 8px;   
+  margin: 2%;
+}
+
+label {
+  text-align: start ;
+  margin-bottom: 20px;
+}
+
+.products {
+  height: 100%;
+  overflow: auto;
+}
+
+.del {
+  float: right;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+}
+
+.flash {
+  width: 200px;
+  min-height: 60px;
+  padding-top: 20px;
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  box-shadow: 4px 4px 24px #bdacac; 
+  background-color: #f5f4f4;
+  border: 2px solid #e3e3e3;
+  border-radius: 8px;
+  font-weight: bold; 
+  font-size: 18px;
+
+}
