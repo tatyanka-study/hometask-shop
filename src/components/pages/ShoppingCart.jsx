@@ -17,7 +17,7 @@ const ShoppingCart = ({ordersItems, deleteHandler}) => {
       const [formValues, setFormValues] = useState([]);
 
       const submitForm = () => {
-        if (initialValue == { }) {
+        if (!initialValues.name || !initialValues.email || !initialValues.phone || !initialValues.address) {
           // в умові для if потрібно перебирати елементи input на наявныть value
           return alert("please fill out the form");
         }
