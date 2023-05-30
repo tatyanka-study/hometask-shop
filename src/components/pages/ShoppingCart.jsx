@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import OrderCard from '../OrderCard';
-import validator from 'validator';
 
 
 const ShoppingCart = ({ordersItems, deleteHandler}) => {
@@ -21,12 +20,13 @@ const ShoppingCart = ({ordersItems, deleteHandler}) => {
           // в умові для if потрібно перебирати елементи input на наявныть value
           return alert("please fill out the form");
         }
-        setFormValues((formValues) => [...formValues, initialValues], [...formValues, ordersItems]); 
+        setFormValues([...formValues, {...initialValues, ordersItems}]); 
         
         initialValues.name = "";
         initialValues.email = "";
         initialValues.phone = "";
         initialValues.address = "";
+        ordersItems.length = 0;
       };
 
       useEffect(() => {

@@ -3,6 +3,7 @@ import Header from './pages/Header';
 import Brands from './Brands';
 import Brand from './Brand';
 import { brandList } from './data';
+import FlashMessage from './FlashMessage';
 
 
 const Shop = () => {
@@ -60,13 +61,14 @@ const deleteHandler = (id) => {
                     <Brands brandList={brandList} setSelectedBrandId={setSelectedBrandId}/>
                 </div>
                 <div className='sidebar right'>
-                    <Brand selectedBrand={getSelectedBrand(selectedBrandId)} orders={orders} setOrders={setOrders}/>                   
+                    <Brand selectedBrand={getSelectedBrand(selectedBrandId)} orders={orders} setOrders={setOrders}/>  
+                    <FlashMessage text={'Order added to cart'} duration ={2000} orders={orders} />                 
                 </div>
             </div>
       </main>
       <footer>
-          <div>ElifTech-shop &copy; 2023</div>
-      </footer>
+          <div >ElifTech-shop &copy; 2023</div>          
+          </footer>
     </div>
   )
 }

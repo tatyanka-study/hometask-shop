@@ -169,7 +169,7 @@ button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr; 
   padding: 10px;
-  width: 50%;
+  width: 40%;
   margin: 20px auto;
   height: 500px;
 }
@@ -180,8 +180,7 @@ form {
 }
 
 input {
-  margin: 0 0 15px 7px;
-  
+  margin: 0 0 15px 7px; 
  
 }
 
@@ -206,4 +205,20 @@ label {
   width: 25px;
   height: 25px;
   padding: 3px;
+}
+
+.flash {
+  width: 200px;
+  min-height: 60px;
+  padding-top: 20px;
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  box-shadow: 4px 4px 24px #bdacac; 
+  background-color: #f5f4f4;
+  border: 2px solid #e3e3e3;
+  border-radius: 8px;
+  font-weight: bold; 
+  font-size: 18px;
+
 }

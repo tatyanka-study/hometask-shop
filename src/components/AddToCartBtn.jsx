@@ -1,11 +1,14 @@
 import React, {useState} from 'react';
 
+
+
 const AddToCartBtn = ({identification, orders, setOrders}) => {    
 
   const addToCart = () => {
-    // alert('Your order has been added to your cart')
+     
     console.log(identification)
     let newOrder = [...orders, identification];
+   
 
    return setOrders(newOrder);
   }
