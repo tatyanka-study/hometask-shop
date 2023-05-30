@@ -21,7 +21,12 @@ const ShoppingCart = ({ordersItems, deleteHandler}) => {
           // в умові для if потрібно перебирати елементи input на наявныть value
           return alert("please fill out the form");
         }
-        setFormValues((formValues) => [...formValues, initialValues], [...formValues, ordersItems]);       
+        setFormValues((formValues) => [...formValues, initialValues], [...formValues, ordersItems]); 
+        
+        initialValues.name = "";
+        initialValues.email = "";
+        initialValues.phone = "";
+        initialValues.address = "";
       };
 
       useEffect(() => {
