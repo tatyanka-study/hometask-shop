@@ -1,10 +1,32 @@
-# Getting Started with Create React App
+# Delivery App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Web application where users can order food delivery
 
-## Available Scripts
+## Download & Get started
 
-In the project directory, you can run:
+This app can be downloaded or cloned.
+
+It`s at the link (https://github.com/tatyanka-study/hometask-shop.git).
+
+**To download follow the link** 
+
+1. Download ZIP file from the link:
+There will be a green button with the inscription (< > Code). When you click it? you`ll see drop-down list inside which is the last item (Download ZIP). Click it and save the file. 
+
+2. Open downloaded folder with files in code editor:
+Unzip the downloaded file and open it in a code editor. For example, in Visual Studio Code. Since the application is written using the React library it must be installed in your code editor. If not, install it. 
+
+3. You must install dependencies from `package.json`. To do this, open a terminal in a code editor and write in it:
+```
+ npm install
+```
+4. To launch a working application in a browser, write the command in the terminal:
+```
+ npm start
+```
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+5. To stop the application, press `CTRL+C`
 
 ### `npm start`
 
