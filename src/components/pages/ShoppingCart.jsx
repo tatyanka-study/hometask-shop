@@ -24,8 +24,7 @@ const ShoppingCart = ({ordersItems, deleteHandler}) => {
         initialValues.name = "";
         initialValues.email = "";
         initialValues.phone = "";
-        initialValues.address = "";
-        ordersItems.length = 0;
+        initialValues.address = "";       
       };
 
       useEffect(() => {
